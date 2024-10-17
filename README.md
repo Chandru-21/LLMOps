@@ -1,4 +1,6 @@
-## LLMOps using OpenAI,MLflow,FastAPI and RAGAS(Evaluation)
+# Retrieval Augmented Generation (RAG)
+
+## RAG LLMOps using OpenAI,MLflow,FastAPI and RAGAS(Evaluation)
 
 Step I : Install all the requirements and execute the RAG_mlflow.py file
 
