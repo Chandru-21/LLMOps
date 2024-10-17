@@ -6,7 +6,7 @@ Now your LLM model run is registered in MLFlow with its evaluations metrices.
 
 ![image](https://github.com/user-attachments/assets/d2114340-6f4b-44fb-a772-38e1d283a157)
 
-RAGAS Evaluation metrics are logged in MLFlow, refer code for further details
+RAGAS Evaluation metrics are logged in MLFlow, refer code for further details.
 
 Step II : Execute the app.py (python app.py) in cmd navigate to the FastAPI UI in browser,
 
