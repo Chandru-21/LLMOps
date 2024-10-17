@@ -1,1 +1,1 @@
-## LLMOps using OpenAI,MLflow,FastAPI,RAGAS(Evaluation)
+## LLMOps using OpenAI,MLflow,FastAPI and RAGAS(Evaluation)
