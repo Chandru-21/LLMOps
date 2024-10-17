@@ -9,7 +9,7 @@ app = FastAPI()
 mlflow.set_tracking_uri("http://localhost:5000")
 mlflow.set_experiment("RAG_MLFlow")
 mlflow.langchain.autolog()
-model_uri='runs:/9976886f819f4400816192bbf73fcb25/rag_chain_with_source'
+model_uri='runs:/9976886f819f4400816192bbf73fcb25/rag_chain_with_source' ##your mlflow model_uri
 
 loaded_model = mlflow.langchain.load_model(model_uri)
 
