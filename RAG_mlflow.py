@@ -31,7 +31,7 @@ PROMPT = PromptTemplate(
 )
 
 
-loader = PyPDFDirectoryLoader("./LLMOps/data")
+loader = PyPDFDirectoryLoader("data")
 docs = loader.load()
 
 splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=100)
@@ -40,7 +40,7 @@ document_chunks = splitter.split_documents(docs)
 
 embedding_generator = OpenAIEmbeddings()
 faiss_database = FAISS.from_documents(document_chunks, embedding_generator)
-faiss_database.save_local("./LLMOps/faissrag_index")
+faiss_database.save_local("faissrag_index")
 
 retriever = faiss_database.as_retriever()
 
@@ -57,7 +57,7 @@ rag_chain_with_source = RunnableParallel(
 
 rag_chain_with_source.invoke("what is this document all about?")
 
-persist_dir = os.path.join("C:/Users/Chandru/.spyder-py3/LLMOps/LLMOps", "faissrag_index")
+persist_dir = os.path.join("LLMOps", "faissrag_index")
 
 def load_retriever(persist_directory):
    
