@@ -14,7 +14,10 @@ import pandas as pd
 from datasets import Dataset 
 from ragas.metrics import faithfulness, answer_relevancy, context_precision, context_recall, context_entity_recall, answer_similarity, answer_correctness
 from ragas import evaluate
+from dotenv import load_dotenv
+load_dotenv()
 
+#print(os.getenv("OPENAI_API_KEY"))
 
 prompt_template = """
 You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise.
