@@ -11,3 +11,4 @@ langchain-openai==0.2.2
 langchain-text-splitters==0.3.0
 ragas==0.1.10
 faiss-cpu==1.8.0
+pypdf
